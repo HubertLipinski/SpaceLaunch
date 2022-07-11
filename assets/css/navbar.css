@@ -1,0 +1,11 @@
+.text-logo {
+  @apply text-primary tracking-[0.1em] text-[30px] font-bold text-primary
+}
+
+a, .nav-link, .nuxt-link-active, .nuxt-link-exact-active {
+  @apply text-white text-[20px] hover:text-primary
+}
+
+.nuxt-link-active {
+  @apply text-primary
+}
