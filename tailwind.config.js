@@ -17,6 +17,9 @@ module.exports = {
       'black': '#141214',
       'white': '#fff'
     },
+    backgroundImage: {
+      'hero-landing': "url('~@/static/landing.png')"
+    }
   },
   plugins: [],
 }

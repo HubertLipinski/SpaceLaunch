@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-image -mt-32 flex">
+  <section class="hero-image md:-mt-32 flex">
     <div class="container mx-auto flex items-center">
       <div class="h-2/3 w-7/12 flex flex-col justify-around gap-5">
         <header>
@@ -7,7 +7,7 @@
           <h1 class="jumbotron">Starlink 4-21 (v1.5)</h1>
         </header>
         <LaunchTimer/>
-        <div class="btn w-[225px] h-[70px] bg-primary text-white rounded-[25px] text-center text-[22px] leading-[70px]">Learn more</div>
+        <div class="btn w-52 h-16 bg-primary text-white rounded-[25px] text-center text-[22px] leading-[70px]">Learn more</div>
       </div>
     </div>
   </section>

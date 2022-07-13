@@ -12,4 +12,16 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {},
+  overrides: [
+    {
+      files: [
+        'pages/*.vue',
+        'pages/**/*.vue',
+        'layouts/*.vue'
+      ],
+      rules: {
+        'vue/multi-word-component-names': 'off',
+      },
+    },
+  ],
 }
