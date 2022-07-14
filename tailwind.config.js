@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -7,18 +9,28 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      },
+    },
+    fontFamily: {},
     colors: {
-      'primary': '#0087e0',
+      'primary': '#0393f1',
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: '#141214',
+      white: '#ffffff',
       'gray': {
+        ...colors.gray,
         50: '#fafafa',
         500: '#abacab',
       },
-      'black': '#141214',
-      'white': '#fff'
+      sky: colors.sky,
     },
     backgroundImage: {
-      'hero-landing': "url('~@/static/landing.png')"
+      'hero-landing': "url('~@/static/landing.svg')",
+      'hero-landing-full': "url('~@/static/landing-full.jpg')"
     }
   },
   plugins: [],

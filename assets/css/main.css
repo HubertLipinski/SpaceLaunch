@@ -1,6 +1,25 @@
-@import './typography.css';
-@import './navbar.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  @media only screen and (max-width: 1023px) {
+    .clip-path-bg {
+      clip-path: polygon(100% 60%, 100% 100%, 0 100%, 0 90%);
+    }
+  }
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+}
